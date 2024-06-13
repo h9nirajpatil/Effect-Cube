@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper Cube Effect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 10%;
+            top: 30%;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper" style="margin-left: 10px ;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/bc/b7/51/bcb751e283d8cbebdd5d324bddc6ec51.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/3b/3f/a2/3b3fa2971587541df8a83939eca6bffe.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/c7/91/78/c791787145db3f6c2fad6374d84ed9d5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://th.bing.com/th/id/OIP.pJRrJvRKuZe-PBvObyOwsgHaHa?rs=1&pid=ImgDetMain" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper" style="margin-left: 500px ;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://th.bing.com/th/id/OIP.CPb4QJKqNhXvyKo4kKoojgAAAA?rs=1&pid=ImgDetMain" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/ad/b0/f0/adb0f0eedfce9a3e34b9a7e187d54a3d.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images6.alphacoders.com/116/1167538.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/a4/a6/87/a4a687eaadd5ee7dd31e6b47ce338911.jpg" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper" style="margin-left: 1000px ;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/9a/f2/cc/9af2cc39612c240eb30a3236115778c9.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/1b/de/dc/1bdedc3493e6b05745ffc63a42c952c5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://th.bing.com/th/id/OIP.9u0QS90ZdXDMpT_M3rdZhwHaF4?w=1920&h=1524&rs=1&pid=ImgDetMain" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://i.pinimg.com/originals/80/9b/5b/809b5b3c0358e678d1abd8cbe6512936.jpg" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
